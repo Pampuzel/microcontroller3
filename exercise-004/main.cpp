@@ -4,6 +4,8 @@
 #include "CLI/CLI.hpp"
 #include "config.h"
 
+#include "image.h"
+
 auto main(int argc, char **argv) -> int
 {
     /**
@@ -26,7 +28,7 @@ auto main(int argc, char **argv) -> int
      * it is much more convenient than std::cout and printf
      * More info at https://fmt.dev/latest/api.html
      */
-    fmt::print("Hello, {}!\n", app.get_name());
+    fmt::print("Breite {}, Höhe {}\n", image_width, image_height);
 
     /* INSERT YOUR CODE HERE */
 
